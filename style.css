@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  border: solid 2px rgb(86, 86, 110);
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-auto-rows: 40px auto auto;
+  background-color: rgb(86, 86, 110);
+  border-radius: 3%;
+  padding: 0 10px 30px 10px;
+  box-shadow: 5px 5px 10px 5px #00000050;
+}
+
+/* TOP */
+.card .top {
+  display: grid;
+  grid-template-columns: auto 30px 30px;
+  margin-top: 7px;
+}
+
+.card .top img {
+  height: 25px;
+  width: 25px;
+  transition: 0.5s;
+}
+
+.card .top .left :hover {
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 5px 0 rgb(163, 163, 197);
+}
+
+.card .top .like :hover {
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 5px 0 rgb(163, 163, 197);
+}
+
+.card .top .points :hover {
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 5px 0 rgb(163, 163, 197);
+}
+
+.card .top .left :active {
+  height: 25px;
+  width: 25px;
+  box-shadow: 3px 3px 6px 0 black;
+}
+
+.card .top .like :active {
+  height: 25px;
+  width: 25px;
+  box-shadow: 3px 3px 6px 0 black;
+}
+
+.card .top .points :active {
+  height: 25px;
+  width: 25px;
+  box-shadow: 3px 3px 6px 0 black;
+}
+
+/* MIDDLE */
+
+.card .middle {
+  display: grid;
+  place-items: center;
+  margin: 0 20px 10px 20px;
+  border-bottom: solid 1px white;
+}
+
+.card .middle img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.card .middle img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+.card .middle h1 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: white;
+  animation: name 1.5s linear infinite;
+}
+
+@keyframes name {
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.card .middle h2 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgb(155, 153, 153);
+}
+
+.card .middle p {
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: rgb(201, 200, 200);
+  font-size: 13px;
+}
+
+.card .middle a {
+  padding: 7px 30px 7px 30px;
+  margin: 10px 0 10px 0;
+  border-radius: 20px 20px 20px 20px;
+  background: linear-gradient(#e66465, #9198e5);
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+
+.card .middle a:hover {
+  transform: scale(1.1);
+  /* transform: translate(3px, 3px); */
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+.card .middle a:active {
+  transform: scale(1.15);
+  box-shadow: 3px 3px 6px 0 black;
+}
+/* BOTTOM */
+.card .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.card .bottom img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(#6793b1, #6069e9);
+  transition: 0.2s linear;
+}
+
+.card .bottom .github img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+.card .bottom .github img:active {
+  transform: scale(1.15);
+  box-shadow: 3px 3px 7px 0 black;
+}
+
+.card .bottom .twitter img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+.card .bottom .twitter img:active {
+  transform: scale(1.15);
+  box-shadow: 3px 3px 7px 0 black;
+}
+
+.card .bottom .sandbox img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px 0 black;
+}
+
+.card .bottom .sandbox img:active {
+  transform: scale(1.15);
+  box-shadow: 3px 3px 7px 0 black;
+}
+
+.card .bottom h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+.card .bottom p {
+  margin-top: 10px;
+  color: white;
+}
